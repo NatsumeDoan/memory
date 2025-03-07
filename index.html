@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love day</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body onload="startTime()">
+    
+    <div id="lockpage">
+        <div id="clockdate">
+            <div class="clockdate-wrapper">
+                <div id="clock"></div>
+                <div id="date"></div>
+            </div>
+        </div>
+        <div id="swipeText">Vuốt lên để mở khóa</div>
+    </div>
+    <div id="content-pass">
+        <div class="title">Enter LoveCode</div>
+        <div class="passcode-display">
+            <div class="dot" id="dot1"></div>
+            <div class="dot" id="dot2"></div>
+            <div class="dot" id="dot3"></div>
+            <div class="dot" id="dot4"></div>
+        </div>
+    
+        <div class="buttons">
+            <button onclick="addNumber(1)" class="key" data-label="">1</button>
+            <button onclick="addNumber(2)" class="key" data-label="ABC">2</button>
+            <button onclick="addNumber(3)" class="key" data-label="DEF">3</button>
+            <br>
+            <button onclick="addNumber(4)" class="key" data-label="GHI">4</button>
+            <button onclick="addNumber(5)" class="key" data-label="JKL">5</button>
+            <button onclick="addNumber(6)" class="key" data-label="MNO">6</button>
+            <br>
+            <button onclick="addNumber(7)" class="key" data-label="PQRS">7</button>
+            <button onclick="addNumber(8)" class="key" data-label="TUV">8</button>
+            <button onclick="addNumber(9)" class="key" data-label="WXYZ">9</button>
+            
+            <br>
+            <button onclick="addNumber(0)">0</button>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="tittle">
+            <h3>Time in love</h3>
+        </div>
+        <div class="timer" id="timeCounter"></div>
+        <div class="together">
+            <div class="person">
+                <img src="/image/me.jpg" alt="" class="main-img">
+                <span>Minh</span>
+            </div>
+            <div>
+                <img src="/image/img-heart.png" alt="" class="heart-icon">
+            </div>
+            <div class="person">
+                <img src="/image/her.jpg" alt="" class="main-img">
+                <span>Quỳnh</span>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button class="close-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+</body>
+</html>
