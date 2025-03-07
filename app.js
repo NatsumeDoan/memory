@@ -99,7 +99,7 @@ function checkNumber() {
         document.getElementById("myModal").remove();
         document.body.style.setProperty("backdrop-filter", "blur(5px)");
         document.body.style.setProperty("-webkit-backdrop-filter", "blur(5px)"); 
-        document.body.style.background = "url(/image/6.jpg) no-repeat center / cover "; 
+        document.body.style.background = "url(image/6.jpg) no-repeat center / cover "; 
         document.getElementById("content").style.display= "block";
 
         function createHeart() {
