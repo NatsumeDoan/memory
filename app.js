@@ -92,11 +92,12 @@ function checkNumber() {
     let modalMessage = document.getElementById("modalMessage");
 
     if (inputCode === correctCode) {
-        modalMessage.textContent = "true";
+        modalMessage.textContent = "Chào cô gái của anh. Nếu em vào và nhìn thấy những dòng tin nhắn này của anh là anh biết em vẫn nhớ ngày hôm đó. Ngày mà 1 chàng trai quyết định nói ra để có thể thành đôi với em. Nên ngày hôm đó là một ngày kỉ niệm đáng nhớ của chàng trai đó, chính là anh hiện tại đây. Mãi yêu em.";
         modalMessage.style.color = "green";
+        modalMessage.style.fontFamily = "'Dancing Script', cursive";
         failCount = 0;
         document.getElementById("content-pass").remove();
-        document.getElementById("myModal").remove();
+        
         document.body.style.setProperty("backdrop-filter", "blur(5px)");
         document.body.style.setProperty("-webkit-backdrop-filter", "blur(5px)"); 
         document.body.style.background = "url(image/6.jpg) no-repeat center / cover "; 
